@@ -1,0 +1,501 @@
+title,name,ticker
+Walmart,"Wal-Mart Stores, Inc.",WMT
+Berkshire Hathaway,Berkshire Hathaway Inc.,BRKA
+Apple,"Apple, Inc.",AAPL
+Exxon Mobil,Exxon Mobil Corporation,XOM
+McKesson,McKesson Corporation,MCK
+UnitedHealth Group,UnitedHealth Group Incorporated,UNH
+CVS Health,CVS Health Corporation,CVS
+General Motors,General Motors Company,GM
+AT&T,AT&T Inc.,T
+Ford Motor,Ford Motor Company,F
+AmerisourceBergen,AmerisourceBergen Corp.,ABC
+Amazon.com,"Amazon.com, Inc.",AMZN
+General Electric,General Electric Company,GE
+Verizon,Verizon Communications Inc.,VZ
+Cardinal Health,"Cardinal Health, Inc.",CAH
+Costco,Costco Wholesale Corporation,COST
+Walgreens Boots Alliance,"Walgreens Boots Alliance, Inc",WBA
+Kroger,The Kroger Company,KR
+Chevron,Chevron Corporation,CVX
+Fannie Mae,Fannie Mae,FNMA
+J.P. Morgan Chase,JPMorgan Chase & Co.,JPM
+Express Scripts Holding,Express Scripts Holding Company,ESRX
+Home Depot,"The Home Depot, Inc.",HD
+Boeing,The Boeing Company,BA
+Wells Fargo,Wells Fargo & Company,WFC
+Bank of America Corp.,Bank of America Corporation,BAC
+Alphabet,Alphabet Inc.,GOOGL
+Microsoft,Microsoft Corporation,MSFT
+Anthem,"Anthem, Inc.",ANTM
+Citigroup,Citigroup Inc.,C
+Comcast,Comcast Corporation,CMCSA
+IBM,International Business Machines Corporation,IBM
+State Farm Insurance Cos.,State Farm Insurance Cos.,NA
+Phillips 66,Phillips 66,PSX
+Johnson & Johnson,Johnson & Johnson,JNJ
+Procter & Gamble,The Procter & Gamble Company,PG
+Valero Energy,Valero Energy Corporation,VLO
+Target,Target Corporation,TGT
+Freddie Mac,Freddie Mac,FMCC
+Lowe’s,"Lowe's Companies, Inc.",LOW
+Dell Technologies,Dell Technologies Inc.,NA
+MetLife,"MetLife, Inc.",MET
+Aetna,Aetna Inc.,AET
+PepsiCo,"PepsiCo, Inc.",PEP
+Archer Daniels Midland,Archer-Daniels-Midland Company,ADM
+UPS,"United Parcel Service, Inc.",UPS
+Intel,Intel Corporation,INTC
+Prudential Financial,"Prudential Financial, Inc.",PRU
+Albertsons Cos.,"Albertsons Companies, Inc.",NA
+United Technologies,United Technologies Corporation,UTX
+Marathon Petroleum,Marathon Petroleum Corporation,MPC
+Disney,The Walt Disney Company,DIS
+Humana,Humana Inc.,HUM
+Pfizer,Pfizer Inc.,PFE
+AIG,"American International Group, Inc.",AIG
+Lockheed Martin,Lockheed Martin Corporation,LMT
+Sysco,Sysco Corporation,SYY
+FedEx,FedEx Corporation,FDX
+Hewlett Packard Enterprise,Hewlett Packard Enterprise Company,HPE
+Cisco Systems,"Cisco Systems, Inc.",CSCO
+HP,HP Inc.,HPQ
+Dow Chemical,The Dow Chemical Company,DOW
+HCA Holdings,"HCA Holdings, Inc.",HCA
+Coca-Cola,The Coca-Cola Company,KO
+New York Life Insurance,New York Life Insurance Company,NA
+Centene,Centene Corporation,CNC
+American Airlines Group,American Airlines Group Inc.,AAL
+Nationwide,Nationwide Mutual Insurance Co.,NA
+Merck,"Merck & Co., Inc.",MRK
+Cigna,CIGNA Corporation,CI
+Delta Air Lines,"Delta Air Lines, Inc.",DAL
+Best Buy,"Best Buy Co., Inc.",BBY
+Honeywell International,Honeywell International Inc.,HON
+Caterpillar,Caterpillar Inc.,CAT
+Liberty Mutual Insurance Group,Liberty Mutual Holding Company Inc.,NA
+Morgan Stanley,Morgan Stanley,MS
+Massachusetts Mutual Life Insurance,Massachusetts Mutual Life Insurance Company,NA
+Goldman Sachs Group,"The Goldman Sachs Group, Inc.",GS
+Energy Transfer Equity,"Energy Transfer Equity, L.P.",ETE
+TIAA,Teachers Insurance and Annuity Association,NA
+Oracle,Oracle Corporation,ORCL
+Tyson Foods,"Tyson Foods, Inc.",TSN
+United Continental Holdings,"United Continental Holdings, Inc.",UAL
+Allstate,The Allstate Corporation,ALL
+Publix Super Markets,"Publix Super Markets, Inc.",NA
+American Express,American Express Company,AXP
+TJX,"The TJX Companies, Inc.",TJX
+Nike,"Nike, Inc.",NKE
+Exelon,Exelon Corporation,EXC
+General Dynamics,General Dynamics Corporation,GD
+Rite Aid,Rite Aid Corporation,RAD
+Gilead Sciences,"Gilead Sciences, Inc.",GILD
+CHS,CHS Inc.,NA
+3M,3M Company,MMM
+Time Warner,Time Warner Inc.,TWX
+Charter Communications,"Charter Communications, Inc.",CHTR
+Northwestern Mutual,"Northwestern Mutual Life Insurance Company, Inc.",NA
+Facebook,"Facebook, Inc.",FB
+Travelers Cos.,"The Travelers Companies, Inc.",TRV
+Capital One Financial,Capital One Financial Corporation,COF
+Twenty-First Century Fox,"Twenty-First Century Fox, Inc.",FOXA
+USAA,United Services Automobile Association,NA
+World Fuel Services,World Fuel Services Corporation,INT
+Philip Morris International,Philip Morris International Inc.,PM
+Deere,Deere & Company,DE
+Kraft Heinz,The Kraft Heinz Company,KHC
+Tech Data,Tech Data Corporation,TECD
+Avnet,"Avnet, Inc.",AVT
+Mondelez International,"Mondelez International, Inc.",MDLZ
+Macy’s,"Macy's, Inc.",M
+AbbVie,AbbVie Inc.,ABBV
+McDonald’s,McDonald's Corporation,MCD
+DuPont,E.I. du Pont de Nemours and Company,DD
+Northrop Grumman,Northrop Grumman Corporation,NOC
+ConocoPhillips,ConocoPhillips,COP
+Raytheon,Raytheon Company,RTN
+Tesoro,Tesoro Corporation,TSO
+Arrow Electronics,"Arrow Electronics, Inc",ARW
+Qualcomm,Qualcomm Incorporated,QCOM
+Progressive,The Progressive Corporation,PGR
+Duke Energy,Duke Energy Corporation,DUK
+Enterprise Products Partners,Enterprise Products Partners L.P.,EPD
+Amgen,Amgen Inc.,AMGN
+US Foods Holding,US Foods Holding Corp.,USFD
+U.S. Bancorp,U.S. Bancorp,USB
+Aflac,Aflac Incorporated,AFL
+Sears Holdings,Sears Holdings Corporation,SHLD
+Dollar General,Dollar General Corporation,DG
+AutoNation,"AutoNation, Inc.",AN
+Community Health Systems,"Community Health Systems, Inc.",CYH
+Starbucks,Starbucks Corporation,SBUX
+Eli Lilly,Eli Lilly and Company,LLY
+International Paper,International Paper Company,IP
+Tenet Healthcare,Tenet Healthcare Corporation,THC
+Abbott Laboratories,Abbott Laboratories,ABT
+Dollar Tree,"Dollar Tree, Inc.",DLTR
+Whirlpool,Whirlpool Corporation,WHR
+Southwest Airlines,Southwest Airlines Co.,LUV
+Emerson Electric,Emerson Electric Co.,EMR
+Staples,"Staples, Inc.",SPLS
+Plains GP Holdings,"Plains GP Holdings, L.P.",PAGP
+Penske Automotive Group,"Penske Automotive Group, Inc.",PAG
+Union Pacific,Union Pacific Corporation,UNP
+Danaher,Danaher Corporation,DHR
+Southern,The Southern Company,SO
+ManpowerGroup,ManpowerGroup Inc.,MAN
+Bristol-Myers Squibb,Bristol-Myers Squibb Company,BMY
+Altria Group,"Altria Group, Inc.",MO
+Fluor,Fluor Corporation,FLR
+Kohl’s,Kohl's Corporation,KSS
+Lear,Lear Corporation,LEA
+Jabil Circuit,"Jabil Circuit, Inc.",JBL
+Hartford Financial Services Group,"The Hartford Financial Services Group, Inc.",HIG
+Thermo Fisher Scientific,Thermo Fisher Scientific Inc.,TMO
+Kimberly-Clark,Kimberly-Clark Corporation,KMB
+Molina Healthcare,"Molina Healthcare, Inc.",MOH
+PG&E Corp.,PG&E Corporation,PCG
+Supervalu,Supervalu Inc.,SVU
+Cummins,Cummins Inc.,CMI
+CenturyLink,"CenturyLink, Inc.",CTL
+AECOM,AECOM,ACM
+Xerox,Xerox Corporation,XRX
+Marriott International,"Marriott International, Inc.",MAR
+Paccar,PACCAR Inc,PCAR
+General Mills,"General Mills, Inc.",GIS
+PNC Financial Services Group,"The PNC Financial Services Group, Inc.",PNC
+American Electric Power,"American Electric Power Company, Inc.",AEP
+Icahn Enterprises,Icahn Enterprises L.P.,IEP
+Nucor,Nucor Corporation,NUE
+NextEra Energy,"NextEra Energy, Inc.",NEE
+Performance Food Group,Performance Food Group Company,PFGC
+PBF Energy,PBF Energy Inc.,PBF
+Halliburton,Halliburton Company,HAL
+CarMax,"CarMax, Inc.",KMX
+Freeport-McMoRan,Freeport-McMoRan Inc.,FCX
+Whole Foods Market,"Whole Foods Market, Inc.",WFM
+Bank of New York Mellon,The Bank of New York Mellon Corporation,BK
+Gap,"The Gap, Inc.",GPS
+Omnicom Group,Omnicom Group Inc.,OMC
+Genuine Parts,Genuine Parts Company,GPC
+DaVita,DaVita Inc.,DVA
+Colgate-Palmolive,Colgate-Palmolive Company,CL
+PPG Industries,"PPG Industries, Inc.",PPG
+Goodyear Tire & Rubber,The Goodyear Tire & Rubber Company,GT
+Synchrony Financial,Synchrony Financial,SYF
+DISH Network,DISH Network Corporation,DISH
+Visa,Visa Inc.,V
+Nordstrom,"Nordstrom, Inc.",JWN
+INTL FCStone,INTL FCStone Inc.,INTL
+WestRock,WestRock Company,WRK
+XPO Logistics,"XPO Logistics, Inc.",XPO
+Aramark,Aramark,ARMK
+CBS,CBS Corporation,CBS
+AES,The AES Corporation,AES
+WellCare Health Plans,"WellCare Health Plans, Inc.",WCG
+FirstEnergy,FirstEnergy Corp.,FE
+Conagra Brands,"Conagra Brands, Inc.",CAG
+Synnex,Synnex Corporation,SNX
+CDW,CDW Corporation,CDW
+Textron,Textron Inc.,TXT
+Waste Management,"Waste Management, Inc.",WM
+Illinois Tool Works,Illinois Tool Works Inc.,ITW
+Office Depot,"Office Depot, Inc.",ODP
+Monsanto,Monsanto Company,MON
+Cognizant Technology Solutions,Cognizant Technology Solutions Corporation,CTSH
+Texas Instruments,Texas Instruments Incorporated,TXN
+Lincoln National,Lincoln National Corporation,LNC
+Newell Brands,Newell Brands Inc.,NWL
+Land O’Lakes,"Land O'Lakes, Inc.",NA
+Marsh & McLennan,"Marsh & McLennan Companies, Inc.",MMC
+Ecolab,Ecolab Inc.,ECL
+C.H. Robinson Worldwide,"C. H. Robinson Worldwide, Inc.",CHRW
+Loews,Loews Corporation,L
+CBRE Group,"CBRE Group, Inc.",CBG
+Kinder Morgan,"Kinder Morgan, Inc.",KMI
+Kellogg,Kellogg Company,K
+Western Digital,Western Digital Corporation,WDC
+Guardian Life Ins. Co. of America,Guardian Life Ins. Co. of America,NA
+Ross Stores,"Ross Stores, Inc.",ROST
+L Brands,"L Brands, Inc.",LB
+J.C. Penney,"J.C. Penney Company, Inc.",JCP
+Farmers Insurance Exchange,Farmers Insurance Exchange,NA
+Reynolds American,Reynolds American Inc.,RAI
+Viacom,Viacom Inc.,VIAB
+Becton Dickinson,"Becton, Dickinson and Company",BDX
+Micron Technology,"Micron Technology, Inc.",MU
+Principal Financial,"Principal Financial Group, Inc.",PFG
+Arconic,Arconic Inc.,ARNC
+NRG Energy,"NRG Energy, Inc.",NRG
+VF,V.F. Corporation,VFC
+Devon Energy,Devon Energy Corporation,DVN
+D.R. Horton,"D.R. Horton, Inc.",DHI
+Bed Bath & Beyond,Bed Bath & Beyond Inc.,BBBY
+Consolidated Edison,"Consolidated Edison, Inc.",ED
+Edison International,Edison International,EIX
+Sherwin-Williams,The Sherwin-Williams Company,SHW
+NGL Energy Partners,NGL Energy Partners LP,NGL
+Dominion Energy,"Dominion Energy, Inc.",D
+Ameriprise Financial,"Ameriprise Financial, Inc.",AMP
+ADP,"Automatic Data Processing, Inc.",ADP
+Hilton Worldwide Holdings,Hilton Worldwide Holdings Inc.,HLT
+First Data,First Data Corporation,FDC
+Henry Schein,"Henry Schein, Inc.",HSIC
+Toys “R” Us,"Toys ""R"" Us, Inc.",NA
+BB&T Corp.,BB&T Corporation,BBT
+Reinsurance Group of America,"Reinsurance Group of America, Incorporated",RGA
+Core-Mark Holding,"Core-Mark Holding Company, Inc.",CORE
+Biogen,Biogen Inc.,BIIB
+Las Vegas Sands,Las Vegas Sands Corp.,LVS
+Stanley Black & Decker,"Stanley Black & Decker, Inc.",SWK
+Parker-Hannifin,Parker-Hannifin Corporation,PH
+Stryker,Stryker Corporation,SYK
+Estee Lauder,The Estee Lauder Companies Inc.,EL
+Celgene,Celgene Corporation,CELG
+BlackRock,"BlackRock, Inc.",BLK
+Xcel Energy,Xcel Energy Inc.,XEL
+CSX,CSX Corporation,CSX
+Unum Group,Unum Group,UNM
+Jacobs Engineering Group,Jacobs Engineering Group Inc.,JEC
+Lennar,Lennar Corporation,LEN
+Group 1 Automotive,"Group 1 Automotive, Inc.",GPI
+Leucadia National,Leucadia National Corporation,LUK
+Entergy,Entergy Corporation,ETR
+PayPal Holdings,"PayPal Holdings, Inc.",PYPL
+Applied Materials,"Applied Materials, Inc.",AMAT
+Voya Financial,"Voya Financial, Inc.",VOYA
+Mastercard,Mastercard Incorporated,MA
+Priceline Group,The Priceline Group Inc.,PCLN
+Liberty Interactive,Liberty Interactive Corporation,QVCA
+AutoZone,"AutoZone, Inc.",AZO
+State Street Corp.,State Street Corporation,STT
+DTE Energy,DTE Energy Company,DTE
+L3 Technologies,"L3 Technologies, Inc.",LLL
+HollyFrontier,HollyFrontier Corporation,HFC
+Praxair,"Praxair, Inc.",PX
+Universal Health Services,"Universal Health Services, Inc.",UHS
+Discover Financial Services,Discover Financial Services,DFS
+Occidental Petroleum,Occidental Petroleum Corporation,OXY
+United States Steel,United States Steel Corporation,X
+Sempra Energy,Sempra Energy,SRE
+Baxter International,Baxter International Inc.,BAX
+W.W. Grainger,"W.W. Grainger, Inc.",GWW
+Autoliv,"Autoliv, Inc.",ALV
+Norfolk Southern,Norfolk Southern Corporation,NSC
+Baker Hughes,Baker Hughes Incorporated,BHI
+Ally Financial,Ally Financial Inc.,ALLY
+Sonic Automotive,"Sonic Automotive, Inc",SAH
+Owens & Minor,"Owens & Minor, Inc.",OMI
+Huntsman,Huntsman Corporation,HUN
+Laboratory Corp. of America,Laboratory Corporation of America Holdings,LH
+Murphy USA,Murphy USA Inc.,MUSA
+Advance Auto Parts,"Advance Auto Parts, Inc.",AAP
+Fidelity National Financial,"Fidelity National Financial, Inc.",FNF
+Air Products & Chemicals,"Air Products & Chemicals, Inc.",APD
+Hormel Foods,Hormel Foods Corporation,HRL
+Hertz Global Holdings,"Hertz Global Holdings, Inc.",HTZ
+MGM Resorts International,MGM Resorts International,MGM
+Corning,Corning Incorporated,GLW
+Republic Services,"Republic Services, Inc.",RSG
+Alcoa,Alcoa Corporation,AA
+Fidelity National Information Services,"Fidelity National Information Services, Inc.",FIS
+Pacific Life,Pacific Life,NA
+SunTrust Banks,"SunTrust Banks, Inc.",STI
+LKQ,LKQ Corporation,LKQ
+BorgWarner,BorgWarner Inc.,BWA
+Ball,Ball Corporation,BLL
+CST Brands,"CST Brands, Inc.",CST
+Public Service Enterprise Group,Public Service Enterprise Group Incorporated,PEG
+Eastman Chemical,Eastman Chemical Company,EMN
+eBay,eBay Inc.,EBAY
+Mohawk Industries,"Mohawk Industries, Inc.",MHK
+Oneok,"ONEOK, Inc.",OKE
+Frontier Communications,Frontier Communications Corporation,FTR
+Netflix,"Netflix, Inc.",NFLX
+American Family Insurance Group,American Family Insurance Group,NA
+Thrivent Financial for Lutherans,Thrivent Financial for Lutherans,NA
+Expedia,"Expedia, Inc.",EXPE
+Lithia Motors,"Lithia Motors, Inc.",LAD
+Avis Budget Group,"Avis Budget Group, Inc.",CAR
+Reliance Steel & Aluminum,Reliance Steel & Aluminum Co.,RS
+GameStop,GameStop Corp.,GME
+Tenneco,Tenneco Inc.,TEN
+O’Reilly Automotive,"O'Reilly Automotive, Inc.",ORLY
+Peter Kiewit Sons’,"Peter Kiewit Sons', Inc.",NA
+United Natural Foods,"United Natural Foods, Inc.",UNFI
+salesforce.com,"salesforce.com, inc.",CRM
+Boston Scientific,Boston Scientific Corporation,BSX
+Newmont Mining,Newmont Mining Corporation,NEM
+Genworth Financial,"Genworth Financial, Inc.",GNW
+Live Nation Entertainment,"Live Nation Entertainment, Inc.",LYV
+Veritiv,Veritiv Corp,VRTV
+News Corp.,News Corporation,NWSA
+Crown Holdings,"Crown Holdings, Inc.",CCK
+Global Partners,Global Partners LP,GLP
+PVH,PVH Corp.,PVH
+Level 3 Communications,"Level 3 Communications, Inc.",LVLT
+Navistar International,Navistar International Corporation,NAV
+Univar,Univar Inc.,UNVR
+Campbell Soup,Campbell Soup Company,CPB
+Dick’s Sporting Goods,"Dick's Sporting Goods, Inc.",DKS
+Weyerhaeuser,Weyerhaeuser Company,WY
+Mutual of Omaha Insurance,Mutual of Omaha Insurance Company,NA
+Chesapeake Energy,Chesapeake Energy Corporation,CHK
+Anadarko Petroleum,Anadarko Petroleum Corporation,APC
+Interpublic Group,"The Interpublic Group of Companies, Inc.",IPG
+J.M. Smucker,The J.M. Smucker Company,SJM
+Steel Dynamics,"Steel Dynamics, Inc.",STLD
+Foot Locker,"Foot Locker, Inc.",FL
+Western Refining,"Western Refining, Inc.",NA
+SpartanNash,SpartanNash Company,SPTN
+Dean Foods,Dean Foods Company,DF
+Zimmer Biomet Holdings,"Zimmer Biomet Holdings, Inc.",ZBH
+PulteGroup,"PulteGroup, Inc.",PHM
+W.R. Berkley,W.R. Berkley Corporation,WRB
+Quanta Services,"Quanta Services, Inc.",PWR
+EOG Resources,"EOG Resources, Inc.",EOG
+Charles Schwab,The Charles Schwab Corporation,SCHW
+Eversource Energy,Eversource Energy,ES
+Anixter International,Anixter International Inc.,AXE
+EMCOR Group,"EMCOR Group, Inc.",EME
+Assurant,"Assurant, Inc.",AIZ
+CenterPoint Energy,"CenterPoint Energy, Inc.",CNP
+Harris,Harris Corporation,HRS
+HD Supply Holdings,"HD Supply Holdings, Inc.",HDS
+PPL,PPL Corporation,PPL
+Quest Diagnostics,Quest Diagnostics Incorporated,DGX
+Williams,"The Williams Companies, Inc.",WMB
+WEC Energy Group,"WEC Energy Group, Inc.",WEC
+Hershey,The Hershey Company,HSY
+AGCO,AGCO Corporation,AGCO
+Ralph Lauren,Ralph Lauren Corporation,RL
+Masco,Masco Corporation,MAS
+WESCO International,"WESCO International, Inc.",WCC
+LifePoint Health,"LifePoint Health, Inc.",LPNT
+National Oilwell Varco,"National Oilwell Varco, Inc.",NOV
+Kindred Healthcare,"Kindred Healthcare, Inc.",KND
+Mosaic,The Mosaic Company,MOS
+Alliance Data Systems,Alliance Data Systems Corporation,ADS
+Computer Sciences,Computer Sciences Corporation,NA
+Huntington Ingalls Industries,"Huntington Ingalls Industries, Inc.",HII
+Leidos Holdings,"Leidos Holdings, Inc.",LDOS
+Erie Insurance Group,Erie Insurance Group,NA
+Tesla,"Tesla, Inc.",TSLA
+Ascena Retail Group,"Ascena Retail Group, Inc.",ASNA
+Darden Restaurants,"Darden Restaurants, Inc.",DRI
+Harman International Industries,"Harman International Industries, Incorporated",NA
+Nvidia,NVIDIA Corporation,NVDA
+R.R. Donnelley & Sons,R.R. Donnelley & Sons Company,RRD
+Fifth Third Bancorp,Fifth Third Bancorp,FITB
+Quintiles IMS Holdings,"Quintiles IMS Holdings, Inc.",Q
+Jones Lang LaSalle,Jones Lang LaSalle Incorporated,JLL
+Dover,Dover Corporation,DOV
+Spirit AeroSystems Holdings,"Spirit AeroSystems Holdings, Inc.",SPR
+Ryder System,"Ryder System, Inc.",R
+A-Mark Precious Metals,"A-Mark Precious Metals, Inc.",AMRK
+Tractor Supply,Tractor Supply Company,TSCO
+Sealed Air,Sealed Air Corporation,SEE
+Auto-Owners Insurance,Auto-Owners Insurance Group,NA
+Yum China Holdings,"Yum China Holdings, Inc.",YUMC
+Calpine,Calpine Corporation,CPN
+Owens-Illinois,"Owens-Illinois, Inc.",OI
+Targa Resources,Targa Resources Corp.,TRGP
+Jones Financial (Edward Jones),"The Jones Financial Companies, L.L.L.P.",JBLU
+JetBlue Airways,JetBlue Airways Corporation,NA
+Franklin Resources,"Franklin Resources, Inc.",BEN
+Activision Blizzard,"Activision Blizzard, Inc.",ATVI
+J.B. Hunt Transport Services,"J.B. Hunt Transport Services, Inc.",JBHT
+Constellation Brands,"Constellation Brands, Inc.",STZ
+NCR,NCR Corporation,NCR
+Asbury Automotive Group,"Asbury Automotive Group, Inc.",ABG
+American Financial Group,"American Financial Group, Inc.",AFG
+Discovery Communications,"Discovery Communications, Inc.",DISCA
+Berry Global Group,"Berry Global Group, Inc.",BERY
+Sanmina,Sanmina Corporation,SANM
+CalAtlantic Group,"CalAtlantic Group, Inc.",CAA
+Dr Pepper Snapple Group,"Dr Pepper Snapple Group, Inc.",DPS
+Dillard’s,"Dillard's, Inc.",DDS
+HRG Group,"HRG Group, Inc.",HRG
+CMS Energy,CMS Energy Corporation,CMS
+Graybar Electric,"Graybar Electric Company, Inc.",NA
+Builders FirstSource,"Builders FirstSource, Inc.",BLDR
+Yum Brands,"Yum! Brands, Inc.",YUM
+Casey’s General Stores,"Casey's General Stores, Inc.",CASY
+Amphenol,Amphenol Corporation,APH
+Oshkosh,Oshkosh Corporation,OSK
+iHeartMedia,"iHeartMedia, Inc.",IHRT
+TreeHouse Foods,"TreeHouse Foods, Inc.",THS
+Alleghany,Alleghany Corporation,Y
+Expeditors International of Washington,"Expeditors International of Washington, Inc.",EXPD
+Avery Dennison,Avery Dennison Corporation,AVY
+Ameren,Ameren Corporation,AEE
+Hanesbrands,Hanesbrands Inc.,HBI
+Motorola Solutions,"Motorola Solutions, Inc.",MSI
+St. Jude Medical,"St. Jude Medical, Inc.",NA
+Harley-Davidson,"Harley-Davidson, Inc.",HOG
+Regions Financial,Regions Financial Corporation,RF
+Intercontinental Exchange,"Intercontinental Exchange, Inc.",ICE
+Alaska Air Group,"Alaska Air Group, Inc.",ALK
+Old Republic International,Old Republic International Corporation,ORI
+Lam Research,Lam Research Corporation,LRCX
+AK Steel Holding,AK Steel Holding Corporation,AKS
+Rockwell Automation,"Rockwell Automation, Inc.",ROK
+Adobe Systems,Adobe Systems Incorporated,ADBE
+Avon Products,"Avon Products, Inc.",AVP
+Terex,Terex Corporation,TEX
+NVR,"NVR, Inc.",NVR
+Dana,Dana Incorporated,DAN
+Realogy Holdings,Realogy Holdings Corp.,RLGY
+American Tower,American Tower Corporation,AMT
+Packaging Corp. of America,Packaging Corporation of America,PKG
+Citizens Financial Group,"Citizens Financial Group, Inc.",CFG
+United Rentals,"United Rentals, Inc.",URI
+Clorox,The Clorox Company,CLX
+Genesis Healthcare,"Genesis Healthcare, Inc.",GEN
+M&T Bank Corp.,M&T Bank Corporation,MTB
+Ingredion,Ingredion Incorporated,INGR
+UGI,UGI Corporation,UGI
+Owens Corning,Owens Corning,OC
+S&P Global,S&P Global Inc.,SPGI
+Markel,Markel Corporation,MKL
+Wyndham Worldwide,Wyndham Worldwide Corporation,WYN
+Arthur J. Gallagher,Arthur J. Gallagher & Co.,AJG
+Burlington Stores,"Burlington Stores, Inc.",BURL
+First American Financial,First American Financial Corporation,FAF
+Symantec,Symantec Corporation,SYMC
+Patterson,"Patterson Companies, Inc.",PDCO
+Olin,Olin Corporation,OLN
+NetApp,"NetApp, Inc.",NTAP
+Raymond James Financial,"Raymond James Financial, Inc.",RJF
+TravelCenters of America,TravelCenters of America LLC,TA
+Fiserv,"Fiserv, Inc.",FISV
+Host Hotels & Resorts,"Host Hotels & Resorts, Inc.",HST
+Insight Enterprises,"Insight Enterprises, Inc.",NSIT
+Mattel,"Mattel, Inc.",MAT
+AmTrust Financial Services,"AmTrust Financial Services, Inc.",AFSI
+Cincinnati Financial,Cincinnati Financial Corporation,CINF
+Simon Property Group,"Simon Property Group, Inc.",SPG
+Western Union,The Western Union Company,WU
+KeyCorp,KeyCorp,KEY
+Delek US Holdings,"Delek US Holdings, Inc.",DK
+Booz Allen Hamilton Holding,Booz Allen Hamilton Holding Corp.,BAH
+Chemours,The Chemours Company,CC
+Western & Southern Financial Group,Western & Southern Mutual Holding Company,NA
+Celanese,Celanese Corporation,CE
+Windstream Holdings,"Windstream Holdings, Inc.",WIN
+Seaboard,Seaboard Corporation,SEB
+Essendant,Essendant Inc.,ESND
+Apache,Apache Corporation,APA
+Airgas,"Airgas, Inc.",NA
+Kelly Services,"Kelly Services, Inc.",KELYA
+Liberty Media,Liberty Media Corporation,LSXMA
+Rockwell Collins,"Rockwell Collins, Inc.",COL
+Robert Half International,Robert Half International Inc.,RHI
+CH2M Hill,"CH2M HILL Companies, Ltd.",NA
+Big Lots,"Big Lots, Inc.",BIG
+Michaels Cos.,"The Michaels Companies, Inc.",MIK
+Toll Brothers,"Toll Brothers, Inc.",TOL
+Yahoo,Yahoo! Inc.,YHOO
+Vistra Energy,Vistra Energy Corp.,VST
+ABM Industries,ABM Industries Incorporated,ABM
