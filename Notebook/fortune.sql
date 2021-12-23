@@ -1,5 +1,6 @@
 /* exploring a database and its column names*/
- 
+ SELECT *
+ FROM fortune;
 /**** count and distinct will printout the number of non-null values and different non-null values respectively******/
 SELECT COUNT(DISTINCT rank)
 FROM fortune;
@@ -14,4 +15,15 @@ WHERE profits IS NULL;
 /*** You can calculate missing values individually from the total count by subtracting from each column***/
 SELECT COUNT(*) - COUNT (profits_change) AS missing
 FROM fortune;
-/*** ***/
+/***INNER JOIN tables that have common columns and the same values ***/
+SELECT c.name
+FROM fortune AS f
+JOIN company as c
+ON f.ticker = c.ticker
+ORDER BY c.name DESC;
+/***READ an entity relationship diagram****/
+SELECT ticker, COUNT(*) as count
+FROM fortune
+GROUP BY ticker
+ORDER BY count DESC;
+/*****/
