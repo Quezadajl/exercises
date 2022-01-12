@@ -40,3 +40,14 @@ GROUP BY industry2
 ORDER BY COUNT DESC
 LIMIT 1;
 /***USE the above code when  the value you need could be in more than one column**/
+/**Self-join to find out which companies are in both tables***/
+SELECT company_original.name, fortune.title, rank
+---start with original company information
+FROM company AS company_original
+	---Join to another copy of company with parent
+	--- company information by using parent_id and id
+LEFT JOIN company AS company_parent
+ON company_original.ticker = company_parent.ticker
+INNER JOIN fortune 
+ON coalesce(company_parent.ticker, company_original.ticker) = fortune.ticker
+ORDER BY rank;
