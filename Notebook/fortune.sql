@@ -21,9 +21,16 @@ FROM fortune AS f
 JOIN company as c
 ON f.ticker = c.ticker
 ORDER BY c.name DESC;
-/***READ an entity relationship diagram****/
+/***READ an entity relationship diagram**  
+Use the code below to count the number of ticker with each type**/
 SELECT ticker, COUNT(*) as count
 FROM fortune
-GROUP BY ticker
+GROUP BY ticker			
 ORDER BY count DESC;
+/***Now select the most common ticker and count**/
+SELECT company.title, fortune.ticker, fortune.sector
+FROM fortune
+INNER JOIN company
+ON fortune.ticker = company.ticker
+WHERE sector='Health Care';
 /*****/
