@@ -54,3 +54,7 @@ ORDER BY rank;
 /**CAST() OR use the double colon :: EXAMPLE BELOW***/
 SELECT profits_change, CAST(profits_change AS integer) AS profits_change_int
 FROM fortune;
+/***SUMMARY: companies that had a positive revenue change**/
+SELECT COUNT(*)
+FROM fortune
+WHERE revenues_change > 0;
