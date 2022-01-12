@@ -33,4 +33,10 @@ FROM fortune
 INNER JOIN company
 ON fortune.ticker = company.ticker
 WHERE sector='Health Care';
-/*****/
+/**Using Coalesce to find the most common industry without count NULL values ***/
+SELECT coalesce(industry, sector, 'Unknown') AS industry2, COUNT(*)
+FROM fortune
+GROUP BY industry2
+ORDER BY COUNT DESC
+LIMIT 1;
+/***USE the above code when  the value you need could be in more than one column**/
