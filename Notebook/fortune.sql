@@ -51,3 +51,6 @@ ON company_original.ticker = company_parent.ticker
 INNER JOIN fortune 
 ON coalesce(company_parent.ticker, company_original.ticker) = fortune.ticker
 ORDER BY rank;
+/**CAST() OR use the double colon :: EXAMPLE BELOW***/
+SELECT profits_change, CAST(profits_change AS integer) AS profits_change_int
+FROM fortune;
