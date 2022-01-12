@@ -1,4 +1,5 @@
 /* exploring a database and its column names*/
+---Examining distributions and counting observations of interest.
  SELECT *
  FROM fortune;
 /**** count and distinct will printout the number of non-null values and different non-null values respectively******/
