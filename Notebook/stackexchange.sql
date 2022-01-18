@@ -14,3 +14,8 @@ SELECT tag, COUNT(*) AS count
 FROM stackexchange
 GROUP BY tag
 ORDER BY count DESC;
+/****/
+SELECT question_count
+FROM stackexchange
+WHERE question_count IS NOT NULL;
+/****/
