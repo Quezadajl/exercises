@@ -56,3 +56,9 @@ ORDER BY unanswered_count;
 --Use Truncate---
 SELECT trunc(42.1256, 2); --positive # makes all place values not selected zeros 
 SELECT trunc(12598, -3);--(negative values does the same thing past zero)
+-----
+SELECT trunc(unanswered_count, -1) AS trunc_ua, COUNT(*)
+FROM stackexchange
+WHERE tag = 'amazon-ebs'---this will tell us how many values between 30  and 40
+GROUP BY trunc_ua
+ORDER BY trunc_ua;
