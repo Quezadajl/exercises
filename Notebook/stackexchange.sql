@@ -25,4 +25,10 @@ FROM stackexchange;
 ---AND----
 SELECT round(stddev(question_pct),5)
 FROM stackexchange;
-
+---Summarize Variables by groups in the data---
+SELECT tag, 
+	min(question_pct),
+	avg(question_pct),
+	max(question_pct)
+FROM stackexchange
+GROUP BY tag;
