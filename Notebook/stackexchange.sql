@@ -47,3 +47,12 @@ SELECT MIN(maxval),
 FROM (SELECT MAX(question_count) AS maxval
 	 FROM stackexchange
 	 GROUP BY tag) AS max_results;
+----Check for distribution errors---
+SELECT unanswered_count, count(*)
+FROM stackexchange
+WHERE tag ='amazon-ebs'
+GROUP BY unanswered_count
+ORDER BY unanswered_count;
+--Use Truncate---
+SELECT trunc(42.1256, 2); --positive # makes all place values not selected zeros 
+SELECT trunc(12598, -3);--(negative values does the same thing past zero)
