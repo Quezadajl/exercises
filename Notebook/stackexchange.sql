@@ -39,3 +39,11 @@ SELECT unanswered_count/question_count::numeric AS computed_pct,
 FROM stackexchange
 WHERE question_count > 0
 LIMIT 10;
+----Summarize results using a SubQuery---
+SELECT MIN(maxval),
+	MAX(maxval),
+	AVG(maxval),
+	STDDEV(maxval)
+FROM (SELECT MAX(question_count) AS maxval
+	 FROM stackexchange
+	 GROUP BY tag) AS max_results;
