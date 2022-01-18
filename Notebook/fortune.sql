@@ -65,3 +65,12 @@ SELECT sector, AVG(revenues/employees::numeric) AS avg_rev_employee
 FROM fortune
 GROUP BY sector
 ORDER BY avg_rev_employee;
+------Summarize numeric columns---
+SELECT sector, 
+	min(profits),
+	avg(profits),
+	max(profits),
+	stddev(profits)
+FROM fortune
+GROUP BY sector
+ORDER BY avg;
