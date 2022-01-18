@@ -32,3 +32,10 @@ SELECT tag,
 	max(question_pct)
 FROM stackexchange
 GROUP BY tag;
+-------------- Explore with Division---
+----What does the pct of unaswered questions show?--
+SELECT unanswered_count/question_count::numeric AS computed_pct,
+	unanswered_pct
+FROM stackexchange
+WHERE question_count > 0
+LIMIT 10;
