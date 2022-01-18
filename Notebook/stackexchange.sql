@@ -62,3 +62,20 @@ FROM stackexchange
 WHERE tag = 'amazon-ebs'---this will tell us how many values between 30  and 40
 GROUP BY trunc_ua
 ORDER BY trunc_ua;
+---Use Generate Series to create Bins(like a histogram)---
+WITH bins AS (
+	SELECT generate_series(30,60,5) AS lower,
+	generate_series(35,65,5) AS upper),
+	--subset data to tag of interest--
+	ebs AS (
+	SELECT unanswered_count
+	FROM stackexchange
+	WHERE tag='amazon-ebs')
+SELECT lower, upper, count(unanswered_count)
+FROM bins
+LEFT JOIN ebs
+ON unanswered_count >= lower
+AND unanswered_count < upper
+GROUP BY lower, upper
+ORDER BY lower;
+	
