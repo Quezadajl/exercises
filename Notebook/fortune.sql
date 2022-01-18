@@ -59,3 +59,9 @@ FROM fortune;
 SELECT COUNT(*)
 FROM fortune
 WHERE revenues_change > 0;
+/***Summarizing and aggregating numeric data*****/
+
+SELECT sector, AVG(revenues/employees::numeric) AS avg_rev_employee
+FROM fortune
+GROUP BY sector
+ORDER BY avg_rev_employee;
