@@ -78,4 +78,11 @@ ON unanswered_count >= lower
 AND unanswered_count < upper
 GROUP BY lower, upper
 ORDER BY lower;
+-----Generate Series: step 1-----
+SELECT MIN(question_count),MAX(question_count)
+FROM stackexchange
+WHERE tag='dropbox';
+-----Generate Series: step 2-----
+
+
 	
