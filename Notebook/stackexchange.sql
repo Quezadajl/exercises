@@ -83,6 +83,8 @@ SELECT MIN(question_count),MAX(question_count)
 FROM stackexchange
 WHERE tag='dropbox';
 -----Generate Series: step 2-----
-
+SELECT generate_series(2200,3050,50) AS lower,
+	generate_series(2250,3100,50) AS upper,
+-----Generate Series: step 3-----
 
 	
