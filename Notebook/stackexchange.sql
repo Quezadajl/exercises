@@ -97,7 +97,7 @@ WITH bins AS (
 	----select columns for results---
 SELECT lower, upper, COUNT(question_count)
 FROM bins
-JOIN dropbox
+LEFT JOIN dropbox
 ON question_count >= lower
 AND question_count < upper
 GROUP BY lower, upper
