@@ -79,3 +79,6 @@ SELECT trunc(employees, -5) AS employee_bin,COUNT(*)
 FROM fortune
 GROUP BY employee_bin
 ORDER BY employee_bin;
+---More summary functions------
+SELECT corr(assets, equity)
+FROM fortune;
