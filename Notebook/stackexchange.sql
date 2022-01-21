@@ -101,7 +101,8 @@ LEFT JOIN dropbox
 ON question_count >= lower
 AND question_count < upper
 GROUP BY lower, upper
-ORDER BY lower;
+ORDER BY lower
+---More summary functions------
 
 
 	
