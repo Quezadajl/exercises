@@ -82,4 +82,8 @@ ORDER BY employee_bin;
 ---More summary functions: Correlation------
 SELECT corr(assets, equity)
 FROM fortune;
--------
+-----Revenues and Profits--
+SELECT corr(revenues, profits) AS rev_profits,
+	corr(revenues, assets) AS rev_assets,
+	corr(revenues, equity) AS rev_equity
+FROM fortune;
