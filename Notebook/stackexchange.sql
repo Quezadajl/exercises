@@ -102,7 +102,9 @@ ON question_count >= lower
 AND question_count < upper
 GROUP BY lower, upper
 ORDER BY lower
----More summary functions------
+---More summary functions: Correlation------
+SELECT corr(unanswered_count, unanswered_pct)
+FROM stackexchange;
 
 
 	
