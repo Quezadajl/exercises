@@ -87,3 +87,9 @@ SELECT corr(revenues, profits) AS rev_profits,
 	corr(revenues, assets) AS rev_assets,
 	corr(revenues, equity) AS rev_equity
 FROM fortune;
+----Mean and Median using WITHIN GROUP----
+SELECT
+AS
+FROM fortune
+GROUP BY
+ORDER BY
