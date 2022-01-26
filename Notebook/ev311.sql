@@ -20,3 +20,9 @@ SELECT source, COUNT(*)
 FROM ev311
 GROUP BY source
 HAVING COUNT(*) >= 100;
+----FIND the 5 most common values of street and the count of each---
+SELECT street, COUNT(*)
+FROM ev311
+GROUP BY street
+ORDER BY COUNT(*) DESC
+LIMIT 5;
