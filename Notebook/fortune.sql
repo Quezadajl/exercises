@@ -88,8 +88,9 @@ SELECT corr(revenues, profits) AS rev_profits,
 	corr(revenues, equity) AS rev_equity
 FROM fortune;
 ----Mean and Median using WITHIN GROUP----
-SELECT
-AS
+SELECT sector,avg(assets) AS mean,
+	percentile_disc(0.5) WITHIN GROUP (ORDER BY assets) AS median
 FROM fortune
-GROUP BY
-ORDER BY
+GROUP BY sector
+ORDER BY mean;
+-------
