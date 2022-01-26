@@ -26,3 +26,8 @@ FROM ev311
 GROUP BY street
 ORDER BY COUNT(*) DESC
 LIMIT 5;
+-----ERRORS wiht streets?--
+SELECT street, COUNT(*)
+FROM ev311
+GROUP BY street
+ORDER BY street DESC;
