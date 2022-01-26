@@ -15,3 +15,8 @@ SELECT category, COUNT(*)
   FROM ev311
   GROUP BY category
   ORDER BY category;
+------
+SELECT source, COUNT(*)
+FROM ev311
+GROUP BY source
+HAVING COUNT(*) >= 100;
