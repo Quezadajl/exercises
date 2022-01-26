@@ -105,6 +105,10 @@ ORDER BY lower
 ---More summary functions: Correlation------
 SELECT corr(unanswered_count, unanswered_pct)
 FROM stackexchange;
+----CREATING AND USING TEMP TABLES----
+DROP TABLE IF EXISTS startdates;
+
+CREATE TEMP TABLE startdates AS
 
 
 	
