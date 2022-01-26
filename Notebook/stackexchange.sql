@@ -109,6 +109,21 @@ FROM stackexchange;
 DROP TABLE IF EXISTS startdates;
 
 CREATE TEMP TABLE startdates AS
+SELECT tag, MIN(date) AS mindate
+FROM stackexchange
+GROUP BY tag;
 
+SELECT * FROM startdates;
+---JOIN TO TEMP TABLE TWICE OVER!!!!----
+SELECT startdates.tag, mindate, so_min.question_count AS min_date_question_count,
+	so_max.question_count AS max_date_question_count,
+	so_max.question_count - so_min.question_count AS change
+FROM startdates
+INNER JOIN stackexchange AS so_min
+ON startdates.tag = so_min.tag
+AND startdates.mindate = so_min.date
+INNER JOIN stackexchange AS so_max
+ON startdates.tag = so_max.tag
+AND so_max.date = '2018-09-25';
 
 	
