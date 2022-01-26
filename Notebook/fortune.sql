@@ -107,3 +107,5 @@ INSERT INTO top_companies
 SELECT rank, title
 FROM fortune
 WHERE rank BETWEEN 11 AND 20;
+---DELETE TEMP tables---
+DROP TABLE top_companies;
