@@ -110,3 +110,11 @@ WHERE rank BETWEEN 11 AND 20;
 ---DELETE TEMP tables---
 DROP TABLE top_companies; ---or---=
 ---DELECT TEMP tables- DROP TABLE IF EXISTS top_companies;
+---Practice SESSION---
+CREATE TEMP TABLE profit80 AS
+SELECT sector,
+	percentile_disc(0.8) WITHIN GROUP (ORDER BY sector) AS pct80
+FROM fortune
+GROUP BY sector;
+-----
+SELECT * FROM profit80;
