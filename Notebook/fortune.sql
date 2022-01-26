@@ -157,3 +157,8 @@ SELECT measure,
        round(profits_change::numeric, 2) AS profits_change,
        round(revenues_change::numeric, 2) AS revenues_change
   FROM correlations;
+  ----Character data types and common issues: chapter 3---
+  SELECT rank, COUNT(*)
+  FROM fortune
+  GROUP BY rank;
+  --othe example---
