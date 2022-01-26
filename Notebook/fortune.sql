@@ -99,3 +99,6 @@ CREATE TEMP TABLE top_companies AS
 SELECT rank, title
 FROM fortune
 WHERE rank <= 10;
+--select from temporaty table---
+SELECT *
+FROM top_companies;
