@@ -118,5 +118,13 @@ SELECT sector,
 	percentile_disc(0.8) WITHIN GROUP (ORDER BY profits) AS pct80
 FROM fortune
 GROUP BY sector;
------
+---
 SELECT * FROM profit80;
+---MERGE original and TEMP---
+--ADD columns---
+SELECT title, fortune.sector, profits, profits/pct80 AS ratio
+FROM fortune
+LEFT JOIN profit80
+ON fortune.sector = profit80.sector
+WHERE profits > pct80;
+-----
