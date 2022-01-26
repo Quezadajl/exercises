@@ -93,4 +93,9 @@ SELECT sector,avg(assets) AS mean,
 FROM fortune
 GROUP BY sector
 ORDER BY mean;
--------
+---Creating Temporary Tables----
+---Trial: top ten companies--
+CREATE TEMP TABLE top_companies AS
+SELECT rank, title
+FROM fortune
+WHERE rank <= 10;
