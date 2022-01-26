@@ -10,3 +10,8 @@ SELECT priority, COUNT(*) AS count
 FROM ev311
 GROUP BY priority
 ORDER BY count DESC;
+----Count Categories---
+SELECT category, COUNT(*)
+  FROM ev311
+  GROUP BY category
+  ORDER BY category;
