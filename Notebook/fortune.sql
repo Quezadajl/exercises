@@ -164,5 +164,7 @@ SELECT measure,
   --othe example---
   /* SELECT category, COUNT(*)
   FROM product
-  GROUP BY category;*/
+  GROUP BY category
+  ORDER BY caterory--- This helps to see which if there are any duplicates or if there are any spelling mistakes;*/
+  
   
