@@ -102,3 +102,8 @@ WHERE rank <= 10;
 --select from temporaty table---
 SELECT *
 FROM top_companies;
+---Insert new columns to temp tables--
+INSERT INTO top_companies
+SELECT rank, title
+FROM fortune
+WHERE rank BETWEEN 11 AND 20;
