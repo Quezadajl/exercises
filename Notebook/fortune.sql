@@ -162,3 +162,7 @@ SELECT measure,
   FROM fortune
   GROUP BY rank;
   --othe example---
+  /* SELECT category, COUNT(*)
+  FROM product
+  GROUP BY category;*/
+  
