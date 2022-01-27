@@ -37,3 +37,7 @@ FROM ev311
 WHERE category ILIKE '%water%';---only includes lower case; ILIKE includes both upper and lower
 -----
 SELECT trim(lower('Wow!'), '!w');
+----
+SELECT DISTINCT street, trim(street,'0123456789 #/.') AS cleaned_street
+FROM ev311
+ORDER BY street;
