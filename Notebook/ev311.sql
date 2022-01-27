@@ -41,3 +41,4 @@ SELECT trim(lower('Wow!'), '!w');
 SELECT DISTINCT street, trim(street,'0123456789 #/.') AS cleaned_street
 FROM ev311
 ORDER BY street;
+-----Filtering using Ilike and like---
