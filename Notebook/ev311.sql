@@ -31,3 +31,7 @@ SELECT street, COUNT(*)
 FROM ev311
 GROUP BY street
 ORDER BY street DESC;
+----Case sensitive filters with TRIM, LIKE---
+SELECT category
+FROM ev311
+WHERE category ILIKE '%water%';---only includes lower case; ILIKE includes both upper and lower
