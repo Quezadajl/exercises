@@ -35,3 +35,5 @@ ORDER BY street DESC;
 SELECT category
 FROM ev311
 WHERE category ILIKE '%water%';---only includes lower case; ILIKE includes both upper and lower
+-----
+SELECT trim(lower('Wow!'), '!w');
