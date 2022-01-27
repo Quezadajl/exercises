@@ -42,3 +42,10 @@ SELECT DISTINCT street, trim(street,'0123456789 #/.') AS cleaned_street
 FROM ev311
 ORDER BY street;
 -----Filtering using Ilike and like---
+SELECT category, COUNT(*)
+FROM ev311
+WHERE (description ILIKE '%trash%' OR description ILIKE '%garbage%')
+AND category NOT LIKE '%Trash%' AND category NOT LIKE '%Garbage%'
+GROUP BY category
+ORDER BY COUNT DESC
+LIMIT 10;
