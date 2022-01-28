@@ -52,3 +52,9 @@ LIMIT 10;
 ----Manipulating strings-----
 SELECT TRIM(house_num||' '||street)
 FROM ev311;
+---
+SELECT split_part(street,' ',1) AS street_name, COUNT(*)
+FROM ev311
+GROUP BY street_name
+ORDER BY COUNT DESC
+LIMIT 20;
