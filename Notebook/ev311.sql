@@ -49,3 +49,6 @@ AND category NOT LIKE '%Trash%' AND category NOT LIKE '%Garbage%'
 GROUP BY category
 ORDER BY COUNT DESC
 LIMIT 10;
+----Manipulating strings-----
+SELECT TRIM(house_num||' '||street)
+FROM ev311;
