@@ -58,3 +58,13 @@ FROM ev311
 GROUP BY street_name
 ORDER BY COUNT DESC
 LIMIT 20;
+-----Shorten long strings: Practice
+---SELECT the first 50 characters of description with '...' concatenated on the end wehre the length() of the description is greater than 50 characters.
+--Otherwise just select the description as is. Only words that begin with the letter I not words.----
+SELECT
+	CASE WHEN length(description) > 50
+	THEN left(description, 50)|| '...'
+	ELSE description END
+FROM ev311
+WHERE description LIKE 'I %'
+ORDER BY description;
