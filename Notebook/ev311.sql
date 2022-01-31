@@ -98,3 +98,19 @@ LEFT JOIN recode
 ON ev311.category = recode.category
 GROUP BY standardized
 ORDER BY COUNT DESC;
+-----Creating a table with indicator variables--
+DROP TABLE IF EXISTS indicators;
+
+CREATE TEMP TABLE indicators AS
+SELECT id, 
+	CAST(description LIKE '%@%' AS integer) AS email,
+	CAST(description LIKE '%___-___-____%' AS integer) AS phone
+FROM ev311;
+
+SELECT priority,
+	SUM(email)/COUNT(*)::numeric AS email_prop,
+	SUM(phone)/COUNT(*)::numeric AS phone_prop
+FROM ev311
+LEFT JOIN indicators
+ON ev311.id = indicators.id
+GROUP BY priority;
