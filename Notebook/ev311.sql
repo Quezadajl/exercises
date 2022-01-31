@@ -69,7 +69,6 @@ FROM ev311
 WHERE description LIKE 'I %'
 ORDER BY description;
 ----Strategies for multiple transformations---
----Cleaning up evanston 311 data---
 SELECT 
 	CASE WHEN zipcount < 100 THEN 1---for some reason 'other' was not being accepted as a label
 	ELSE zip
@@ -80,4 +79,22 @@ FROM (SELECT zip, COUNT(*) AS zipcount
 	 GROUP BY zip) AS fullcounts
 GROUP BY zip_recoded
 ORDER BY zipsum DESC;
-	
+---Cleaning up evanston 311 data---
+DROP TABLE IF EXISTS recode;
+
+CREATE TEMP TABLE recode AS
+SELECT DISTINCT category, rtrim(split_part(category,'-',1)) AS standardized
+FROM ev311;
+UPDATE recode SET standardized='Trash Cart'
+WHERE standardized LIKE 'Trash%Cart';
+UPDATE recode SET standardized='Snow Removal'
+WHERE standardized LIKE 'Snow%Removal%';
+UPDATE recode SET standardized='UNUSED'
+WHERE standardized IN ('THIS REQUEST IS INACTIVE...TRASH CART', '(DO NOT USE) WATER BILL','DO NOT USE Trash', 'NO LONGER IN USE');
+
+SELECT standardized, COUNT(*)
+FROM ev311
+LEFT JOIN recode
+ON ev311.category = recode.category
+GROUP BY standardized
+ORDER BY COUNT DESC;
