@@ -68,3 +68,16 @@ SELECT
 FROM ev311
 WHERE description LIKE 'I %'
 ORDER BY description;
+----Strategies for multiple transformations---
+---Cleaning up evanston 311 data---
+SELECT 
+	CASE WHEN zipcount < 100 THEN 1---for some reason 'other' was not being accepted as a label
+	ELSE zip
+	END AS zip_recoded,
+	SUM(zipcount) AS zipsum
+FROM (SELECT zip, COUNT(*) AS zipcount
+	 FROM ev311
+	 GROUP BY zip) AS fullcounts
+GROUP BY zip_recoded
+ORDER BY zipsum DESC;
+	
