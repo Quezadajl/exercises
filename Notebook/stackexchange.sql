@@ -130,4 +130,8 @@ SELECT *
 FROM stackexchange
 WHERE date >= '2018-01-01'
 AND date < '2018-05-01';
-	
+---Extract to summarize by field----
+SELECT date_part('month',date) AS month, SUM(question_count)
+FROM stackexchange
+GROUP BY month
+ORDER BY month;
