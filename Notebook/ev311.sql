@@ -116,6 +116,8 @@ ON ev311.id = indicators.id
 GROUP BY priority;
 -----Chapter 4: Date and Time----
 SELECT '2018-01-01'::date + 1;
+
+SELECT '2018-12-10'::date + '1 year 2 days 3 minutes'::interval;
 -------
 SELECT COUNT(*)
 FROM ev311
