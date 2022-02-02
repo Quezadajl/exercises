@@ -123,4 +123,8 @@ SELECT COUNT(*)
 FROM ev311
 WHERE date_created >= '2016-02-29'
 AND date_created < '2016-03-01';
-----
+----Different filter request---
+SELECT COUNT(*)
+FROM ev311
+WHERE date_created >= '2017-03-13'
+AND date_created < '2017-03-13'::date + 1;
