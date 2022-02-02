@@ -114,3 +114,7 @@ FROM ev311
 LEFT JOIN indicators
 ON ev311.id = indicators.id
 GROUP BY priority;
+-----Chapter 4: Date and Time----
+SELECT COUNT(*)
+FROM ev311
+WHERE date_created::date = '2017-01-31';
