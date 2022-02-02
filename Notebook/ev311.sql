@@ -118,3 +118,8 @@ GROUP BY priority;
 SELECT COUNT(*)
 FROM ev311
 WHERE date_created::date = '2017-01-31';
+---OR---
+SELECT COUNT(*)
+FROM ev311
+WHERE date_created >= '2016-02-29'
+AND date_created < '2016-03-01';
