@@ -137,3 +137,9 @@ FROM ev311
 GROUP BY category
 ORDER BY completion_time DESC;
 ------Field extraction----
+---EXTRACT the month from date_created and count requests---
+SELECT date_part('month',date_created::date) AS month, COUNT(*)---I figured out that the reason I have to CAST my date..columns is because they are considered text,I need to used date
+FROM ev311
+WHERE date_created >= '2016-01-01'
+AND date_created < '2018-01-01'
+GROUP BY month;
