@@ -130,5 +130,9 @@ AND date_created < '2016-03-01';
 ----Different filter request---
 SELECT COUNT(*)
 FROM ev311
-WHERE date_created >= '2017-03-13'
-AND date_created < '2017-03-13'::date + 1;
+WHERE date_created >= '2017-03-13';
+-----
+SELECT category, AVG(date_completed::date - date_created::date) AS completion_time
+FROM ev311
+GROUP BY category
+ORDER BY completion_time DESC;
