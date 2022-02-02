@@ -125,5 +125,9 @@ AND startdates.mindate = so_min.date
 INNER JOIN stackexchange AS so_max
 ON startdates.tag = so_max.tag
 AND so_max.date = '2018-09-25';
-
+----datetime practice---
+SELECT *
+FROM stackexchange
+WHERE date >= '2018-01-01'
+AND date < '2018-05-01';
 	
