@@ -132,7 +132,8 @@ SELECT COUNT(*)
 FROM ev311
 WHERE date_created >= '2017-03-13';
 -----
-SELECT category, AVG(date_completed::date - date_created::date) AS completion_time
+SELECT category, AVG(date_completed::date - date_created::date) AS completion_time ---For some reason, I have to used the date CAST so my code can run; otherwise it would be text - text
 FROM ev311
 GROUP BY category
 ORDER BY completion_time DESC;
+------Field extraction----
