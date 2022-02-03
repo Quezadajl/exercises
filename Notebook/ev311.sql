@@ -148,3 +148,8 @@ SELECT date_part('hour',date_completed::date) AS hour, COUNT(*)
 FROM ev311
 GROUP BY hour
 ORDER BY COUNT;
+---Variation by day of the week---
+SELECT to_char(date_created::date, 'day') AS day, AVG(date_completed::date - date_created::date) AS duration
+FROM ev311
+GROUP BY day, EXTRACT(DOW FROM date_created::date)
+ORDER BY EXTRACT(DOW FROM date_created::date);
