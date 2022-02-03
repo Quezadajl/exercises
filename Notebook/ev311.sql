@@ -143,3 +143,9 @@ FROM ev311
 WHERE date_created >= '2016-01-01'
 AND date_created < '2018-01-01'
 GROUP BY month;
+---Get hour and count request---
+SELECT date_part('hour',date_created::date) AS hour, COUNT(*)
+FROM ev311
+GROUP BY hour
+ORDER BY COUNT DESC
+LIMIT 1;
