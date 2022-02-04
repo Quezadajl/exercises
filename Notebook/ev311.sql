@@ -153,3 +153,4 @@ SELECT to_char(date_created::date, 'day') AS day, AVG(date_completed::date - dat
 FROM ev311
 GROUP BY day, EXTRACT(DOW FROM date_created::date)
 ORDER BY EXTRACT(DOW FROM date_created::date);
+---Date truncation---
