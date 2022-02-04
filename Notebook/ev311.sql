@@ -154,3 +154,7 @@ FROM ev311
 GROUP BY day, EXTRACT(DOW FROM date_created::date)
 ORDER BY EXTRACT(DOW FROM date_created::date);
 ---Date truncation---
+SELECT date_trunc('month', day) AS month, AVG(COUNT)
+FROM(SELECT date_trunc('day',date_created::date) AS day, COUNT(*) AS COUNT FROM ev311 GROUP BY day) AS daily_count
+GROUP BY month
+ORDER BY month;
