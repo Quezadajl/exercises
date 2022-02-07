@@ -163,3 +163,7 @@ SELECT day ---subquery to generate all dates from min to max in date_created
 FROM (SELECT generate_series(MIN(date_created::date), MAX(date_created::date), '1 day')::date AS day FROM ev311) AS all_dates
 WHERE day NOT IN ---subquery to select all date_created values as dates
 	(SELECT date_created::date FROM ev311);
+---Generate 6 month bins covering 2016-01-01 and 2018-06-30--
+---Count number of requests made per day
+SELECT generate_series('2016-01-01','2018-01-01','6 month'::interval) AS lower,
+	generate_series('2016-07-01','2018-07-01','6 months'::interval) AS upper;
