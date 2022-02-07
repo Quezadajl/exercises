@@ -158,3 +158,8 @@ SELECT date_trunc('month', day) AS month, AVG(COUNT)
 FROM(SELECT date_trunc('day',date_created::date) AS day, COUNT(*) AS COUNT FROM ev311 GROUP BY day) AS daily_count
 GROUP BY month
 ORDER BY month;
+---------FIND THE MISSING DATES--=
+SELECT day ---subquery to generate all dates from min to max in date_created
+FROM (SELECT generate_series(MIN(date_created::date), MAX(date_created::date), '1 day')::date AS day FROM ev311) AS all_dates
+WHERE day NOT IN ---subquery to select all date_created values as dates
+	(SELECT date_created::date FROM ev311);
