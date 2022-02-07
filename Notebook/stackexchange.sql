@@ -135,3 +135,8 @@ SELECT date_part('month',date) AS month, SUM(question_count)
 FROM stackexchange
 GROUP BY month
 ORDER BY month;
+------
+SELECT EXTRACT(MONTH FROM date) AS month, SUM(question_count)
+FROM stackexchange
+GROUP BY month
+ORDER BY month;
