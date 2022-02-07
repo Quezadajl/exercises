@@ -164,6 +164,11 @@ FROM (SELECT generate_series(MIN(date_created::date), MAX(date_created::date), '
 WHERE day NOT IN ---subquery to select all date_created values as dates
 	(SELECT date_created::date FROM ev311);
 ---Generate 6 month bins covering 2016-01-01 and 2018-06-30--
----Count number of requests made per day
 SELECT generate_series('2016-01-01','2018-01-01','6 month'::interval) AS lower,
 	generate_series('2016-07-01','2018-07-01','6 months'::interval) AS upper;
+---Count number of requests made per day--
+SELECT day, COUNT(date_created) AS count
+FROM( SELECT generate_series('2016-01-01', '2018-06-30', '1 day'::interval)::date AS day) AS daily_series
+LEFT JOIN ev311
+ON day = date_created::date
+GROUP BY day;
