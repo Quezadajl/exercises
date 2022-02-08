@@ -185,4 +185,12 @@ LEFT JOIN daily_count
 ON all_days.date = daily_count.day
 GROUP BY month
 ORDER BY month;
-------
+------Compute the longest gap---
+WITH request_gaps AS (
+	SELECT date_created, LAG(date_created) OVER (ORDER BY date_created) AS previous, date_created::date - LAG(date_created::date) OVER(ORDER BY date_created) AS gap FROM ev311)
+
+SELECT *
+FROM request_gaps
+WHERE gap = (SELECT MAX(gap)
+				FROM request_gaps);
+	
