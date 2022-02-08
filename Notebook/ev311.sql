@@ -193,4 +193,16 @@ SELECT *
 FROM request_gaps
 WHERE gap = (SELECT MAX(gap)
 				FROM request_gaps);
+------Summary of Chapter---
+SELECT date_trunc('day',date_completed::date - date_created::date) AS completion_time, COUNT(*)
+FROM ev311
+WHERE category = 'Rodents- Rats'
+GROUP BY completion_time
+ORDER BY completion_time;
+----
+SELECT category, AVG(date_completed::date - date_created::date) AS avg_completion_time
+FROM ev311
+WHERE date_completed::date - date_created::date < (SELECT percentile_disc(0.95) WITHIN GROUP (ORDER BY date_completed::date - date_created::date) FROM ev311)
+GROUP BY category
+ORDER BY avg_completion_time DESC;
 	
