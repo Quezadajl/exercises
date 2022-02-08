@@ -212,3 +212,25 @@ FROM (SELECT date_trunc('month', date_created) AS month, AVG(EXTRACT(epoch FROM 
 	 GROUP BY month)
 	 AS monthly_avgs;
 ------
+-- Compute monthly counts of requests created
+WITH created AS (
+       SELECT date_trunc('month', date_created) AS month,
+              count(*) AS created_count
+         FROM evanston311
+        WHERE category='Rodents- Rats'
+        GROUP BY month),
+-- Compute monthly counts of requests completed
+      completed AS (
+       SELECT date_trunc('month', date_completed) AS month,
+              count(*) AS completed_count
+         FROM evanston311
+        WHERE category='Rodents- Rats'
+        GROUP BY month)
+-- Join monthly created and completed counts
+SELECT created.month, 
+       created_count, 
+       completed_count
+  FROM created
+       INNER JOIN completed
+       ON created.month=completed.month
+ ORDER BY created.month;
