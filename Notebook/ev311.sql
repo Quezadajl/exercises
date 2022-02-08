@@ -172,3 +172,16 @@ FROM( SELECT generate_series('2016-01-01', '2018-06-30', '1 day'::interval)::dat
 LEFT JOIN ev311
 ON day = date_created::date
 GROUP BY day;
+---Monthly average with missing dates---
+WITH all_days AS
+	(SELECT generate_series('2016-01-01','2018-06-30','1 day'::interval) AS date),
+	daily_count AS
+	(SELECT date_trunc('day', date_created::date) AS day, COUNT(*) AS count
+	FROM ev311
+	GROUP BY day)
+SELECT date_trunc('month', date) AS month, AVG(COALESCE(count, 0)) AS average
+FROM all_days
+LEFT JOIN daily_count
+ON all_days.date = daily_count.day
+GROUP BY month
+ORDER BY month;
