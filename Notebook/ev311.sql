@@ -205,4 +205,10 @@ FROM ev311
 WHERE date_completed::date - date_created::date < (SELECT percentile_disc(0.95) WITHIN GROUP (ORDER BY date_completed::date - date_created::date) FROM ev311)
 GROUP BY category
 ORDER BY avg_completion_time DESC;
-	
+--------
+SELECT corr(avg_completion, COUNT)
+FROM (SELECT date_trunc('month', date_created) AS month, AVG(EXTRACT(epoch FROM date_completed - date_created)) AS avg_completion, COUNT(*) AS count
+	 FROM ev311 WHERE category ='Rodents- Rats'
+	 GROUP BY month)
+	 AS monthly_avgs;
+------
