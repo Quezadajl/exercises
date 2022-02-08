@@ -185,3 +185,4 @@ LEFT JOIN daily_count
 ON all_days.date = daily_count.day
 GROUP BY month
 ORDER BY month;
+------
