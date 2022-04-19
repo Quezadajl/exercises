@@ -21,3 +21,15 @@ INNER JOIN customer AS c
 ON p.customer_id = c.customer_id
 WHERE c.activebool = true
 ORDER BY amount DESC;
+------Transforming your results--------
+SELECT district, UPPER(district) AS upper_district,
+LOWER(district) AS lower_district
+FROM address;
+--------Transforming Numbers---
+SELECT replacement_cost, replacement_cost + 2 AS updated_cost,
+ROUND(replacement_cost/length,2) AS cost_per_minute
+FROM film;
+--------Transforming Dates---------
+SELECT rental_date, EXTRACT(YEAR FROM rental_date) AS rental_year,
+EXTRACT(HOUR FROM rental_date) AS rental_hour
+FROM rental;
