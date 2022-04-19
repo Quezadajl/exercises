@@ -1,1 +1,1 @@
-SELECT * FROM address;
+SELECT * FROM actor;
