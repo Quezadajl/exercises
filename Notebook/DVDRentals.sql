@@ -80,5 +80,17 @@ AND rating = 'G'
 GROUP BY name;
 ---Challenge--
 SELECT rental_duration
-FROM film;
+FROM film
+ORDER BY rental_duration DESC;
+----CHAPTER 2: EXPLORE TABLES---
+SELECT *
+FROM payment
+LIMIT 5;
+---
+SELECT *
+FROM pg_catalog.pg_tables;
+----
+SELECT *
+FROM pg_catalog.pg_tables
+WHERE schemaname = 'public';
 
