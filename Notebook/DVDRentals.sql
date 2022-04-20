@@ -33,3 +33,9 @@ FROM film;
 SELECT rental_date, EXTRACT(YEAR FROM rental_date) AS rental_year,
 EXTRACT(HOUR FROM rental_date) AS rental_hour
 FROM rental;
+------------Practice Example-----
+SELECT LOWER(title) AS title,
+rental_rate AS original_rate,
+rental_rate*0.5 AS sale_rate
+FROM film
+WHERE release_year < '2007';
