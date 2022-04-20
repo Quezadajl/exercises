@@ -99,5 +99,21 @@ SELECT EXTRACT(MONTH FROM payment_date) AS month,
 	FROM payment
 	GROUP BY month;
 -------JOIN other tables----
-
-
+SELECT *
+FROM information_schema.columns
+WHERE table_schema = 'public';
+-----
+SELECT table_name,
+STRING_AGG(column_name, ',') AS columns
+FROM information_schema.columns
+WHERE table_schema = 'public'
+GROUP BY table_name;
+-----Saving as a VIEW---
+/*CREATE VIEW table_columns AS
+SELECT table_name, STRING_AGG(column_name,',') AS columns
+FROM information_schema.columns
+WHERE table_schema = 'public'
+GROUP BY table_name;*/
+---
+SELECT *
+FROM table_columns;
