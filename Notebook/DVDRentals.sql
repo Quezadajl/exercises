@@ -45,3 +45,37 @@ EXTRACT(DAY FROM payment_date) AS payment_day,
 EXTRACT(YEAR FROM payment_date) AS payment_year,
 EXTRACT(HOUR FROM payment_date) AS payment_hour
 FROM payment;
+-------Working with aggregate functions----
+SELECT rating, ROUND(AVG(replacement_cost),2)
+FROM film
+GROUP BY rating;
+-----
+SELECT rating,
+AVG(replacement_cost) AS avg_cost,
+COUNT(rating) AS number_elements,
+SUM(replacement_cost) AS total_cost
+FROM film
+GROUP BY rating;
+----String aggregate functions--
+SELECT rating,
+STRING_AGG(title,',') AS films
+FROM film
+GROUP BY rating;
+-----Practice:Averaging finances----
+SELECT active,
+COUNT(payment_id) AS num_transaction,
+AVG(amount) AS avg_amount,
+SUM(amount) AS total_amount
+FROM payment AS p
+INNER JOIN customer AS c
+ON p.customer_id = c.customer_id
+GROUP BY active;
+-----
+SELECT name, STRING_AGG(title, ',') AS film_titles
+FROM film AS f
+INNER JOIN language AS l
+ON f.language_id = l.language_id
+WHERE release_year = 2006
+AND rating = 'G'
+GROUP BY name;
+
