@@ -78,4 +78,7 @@ ON f.language_id = l.language_id
 WHERE release_year = 2006
 AND rating = 'G'
 GROUP BY name;
+---Challenge--
+SELECT rental_duration
+FROM film;
 
