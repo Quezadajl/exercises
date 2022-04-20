@@ -25,7 +25,7 @@ ORDER BY amount DESC;
 SELECT district, UPPER(district) AS upper_district,
 LOWER(district) AS lower_district
 FROM address;
---------Transforming Numbers---
+--------Transforming Numbers---S
 SELECT replacement_cost, replacement_cost + 2 AS updated_cost,
 ROUND(replacement_cost/length,2) AS cost_per_minute
 FROM film;
@@ -39,3 +39,9 @@ rental_rate AS original_rate,
 rental_rate*0.5 AS sale_rate
 FROM film
 WHERE release_year < '2007';
+---------Extracting Practice-----
+SELECT payment_date,
+EXTRACT(DAY FROM payment_date) AS payment_day,
+EXTRACT(YEAR FROM payment_date) AS payment_year,
+EXTRACT(HOUR FROM payment_date) AS payment_hour
+FROM payment;
