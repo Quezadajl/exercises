@@ -93,4 +93,9 @@ FROM pg_catalog.pg_tables;
 SELECT *
 FROM pg_catalog.pg_tables
 WHERE schemaname = 'public';
+------Using catalog to answer business questions----
+SELECT EXTRACT(MONTH FROM payment_date) AS month,
+	SUM(amount) AS total_payment
+	FROM payment
+	GROUP BY month;
 
