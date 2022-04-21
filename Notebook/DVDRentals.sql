@@ -145,3 +145,8 @@ VALUES
 -----
 SELECT *
 FROM zip_distance;
+/* CREATE TABLE family_films AS
+SELECT film_id, title
+FROM film
+WHERE rating = 'G';*/
+
