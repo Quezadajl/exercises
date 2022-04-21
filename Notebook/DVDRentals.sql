@@ -114,6 +114,11 @@ SELECT table_name, STRING_AGG(column_name,',') AS columns
 FROM information_schema.columns
 WHERE table_schema = 'public'
 GROUP BY table_name;*/
----
-SELECT *
-FROM table_columns;
+---Average length of films by category---
+SELECT name,
+AVG(length) AS average_length
+FROM film AS f
+INNER JOIN category AS c
+ON f.film_id = c.category_id
+GROUP BY name
+ORDER BY average_length;
