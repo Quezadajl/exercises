@@ -131,4 +131,17 @@ INNER JOIN rental AS r
 ON i.inventory_id = r.inventory_id
 GROUP BY title
 ORDER BY count DESC;
-----CH.3 Store and Manage Data---
+----CH.3 Store and Manage Data---Creating a new table and storing new data---
+/*CREATE TABLE zip_distance (
+	postal_code INT,
+	distance FLOAT
+);*/
+----
+/*INSERT INTO zip_distance (postal_code, distance)
+VALUES
+(5463,3.4),
+(6545, 10.2),
+(5658, 1.9);*/
+-----
+SELECT *
+FROM zip_distance;
