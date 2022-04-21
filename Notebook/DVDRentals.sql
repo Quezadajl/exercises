@@ -149,4 +149,10 @@ FROM zip_distance;
 SELECT film_id, title
 FROM film
 WHERE rating = 'G';*/
-
+---UPDATE statement----
+UPDATE customer
+SET email = LOWER(email)
+WHERE address_id IN 
+	(SELECT address_id
+	FROM address
+	WHERE district = 'Tennessee');
