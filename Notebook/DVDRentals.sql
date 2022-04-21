@@ -150,9 +150,16 @@ SELECT film_id, title
 FROM film
 WHERE rating = 'G';*/
 ---UPDATE statement----
-UPDATE customer
+/*UPDATE customer
 SET email = LOWER(email)
 WHERE address_id IN 
 	(SELECT address_id
 	FROM address
-	WHERE district = 'Tennessee');
+	WHERE district = 'Tennessee');*/
+---Example #2---
+/*UPDATE film
+SET rental_rate = rental_rate + 0.5;*/
+---Example 3---
+/*UPDATE film
+SET rental_rate = rental_rate + 1
+WHERE rating = 'R';*/
