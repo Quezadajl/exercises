@@ -174,10 +174,10 @@ WHERE film_id IN
 	WHERE last_name IN ('WILLIS', 'CHASE','WINSLET','GUINESS','HUDSON'))
 -----
 DELETE FROM customer
-WHERE active = 0;*/
+WHERE active = 0;
 
 DELETE FROM customer
 WHERE address_id IN
 	(SELECT address_id
 	FROM address
-	WHERE district = 'Tennessee');
+	WHERE district = 'Tennessee');*/
