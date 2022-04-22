@@ -170,7 +170,14 @@ WHERE film_id IN
 	(SELECT film_id
 	FROM actor AS a
 	INNER JOIN film_actor AS f
-	ON a.actor_id = f.actor_id*/
------
-
+	ON a.actor_id = f.actor_id
 	WHERE last_name IN ('WILLIS', 'CHASE','WINSLET','GUINESS','HUDSON'))
+-----
+DELETE FROM customer
+WHERE active = 0;*/
+
+DELETE FROM customer
+WHERE address_id IN
+	(SELECT address_id
+	FROM address
+	WHERE district = 'Tennessee');
