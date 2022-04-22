@@ -190,3 +190,8 @@ INNER JOIN film AS f
 ON i.film_id = f.film_id
 WHERE f.length < 90;
 --The query above demonstrates proper show of inner join, aliases and labels being used---
+SELECT
+	title,
+	rating
+FROM film
+WHERE rating IN ('G','PG','R');
