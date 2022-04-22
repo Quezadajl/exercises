@@ -195,3 +195,11 @@ SELECT
 	rating
 FROM film
 WHERE rating IN ('G','PG','R');
+--
+SELECT category_id AS film_category,
+		AVG(length) AS average_length
+FROM film AS f
+INNER JOIN category AS c
+ON f.film_id = c.category_id
+WHERE release_year BETWEEN 2005 and 2010
+GROUP BY category_id;
