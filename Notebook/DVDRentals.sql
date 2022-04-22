@@ -203,3 +203,11 @@ INNER JOIN category AS c
 ON f.film_id = c.category_id
 WHERE release_year BETWEEN 2005 and 2010
 GROUP BY category_id;
+--
+SELECT 
+	first_name,
+	last_name,
+	email
+FROM rental AS r
+INNER JOIN customer AS c
+	ON r.customer_id = c.customer_id;
