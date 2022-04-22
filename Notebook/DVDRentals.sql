@@ -181,3 +181,12 @@ WHERE address_id IN
 	(SELECT address_id
 	FROM address
 	WHERE district = 'Tennessee');*/
+----CH. 4---Cleaning/clarifying your code----
+SELECT r.customer_id, r.rental_date, r.return_date
+FROM rental AS r
+INNER JOIN inventory AS i
+ON r.inventory_id = i.inventory_id
+INNER JOIN film AS f
+ON i.film_id = f.film_id
+WHERE f.length < 90;
+--The query above demonstrates proper show of inner join, aliases and labels being used---
