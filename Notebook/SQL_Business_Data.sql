@@ -1,4 +1,2 @@
-SELECT *
-FROM film;
-SELECT *
-FROM rental;
+SELECT f.film,COUNT(customer_id) AS customer_count,
+	SUM()
