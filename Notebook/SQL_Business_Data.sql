@@ -11,4 +11,5 @@ WITH temp_table AS (
 
 SELECT film_id, SUM(pre) AS Revenue
 FROM temp_table
-GROUP BY film_id;
+GROUP BY film_id
+ORDER BY Revenue DESC;
