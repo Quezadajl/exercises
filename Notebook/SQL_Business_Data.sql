@@ -9,7 +9,11 @@ WITH temp_table AS (
 		ON inv.inventory_id = r.inventory_id
 	GROUP BY f.film_id, f.title)
 
-SELECT film_id, title, SUM(pre) AS Revenue
+/*SELECT film_id, title, SUM(pre) AS Revenue
 FROM temp_table
 GROUP BY film_id, title
-ORDER BY Revenue DESC;
+ORDER BY Revenue DESC;*/
+----
+SELECT SUM(pre) AS Revenue
+FROM temp_table
+WHERE film_id > 150;
