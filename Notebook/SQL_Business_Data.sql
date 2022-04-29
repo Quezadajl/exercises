@@ -1,5 +1,5 @@
 
-WITH temp_table AS (
+/*WITH temp_table AS (
 	SELECT f.film_id, 
 		f.title,
 		r.rental_date,
@@ -27,4 +27,11 @@ SELECT DATE_TRUNC('day', rental_date) :: DATE AS rental_week,
 FROM temp_table
 WHERE DATE_TRUNC('day', rental_date) = '2005-05-25'
 GROUP BY rental_date
-ORDER BY rental_date DESC;
+ORDER BY rental_date DESC;*/
+---Calculating Cost--
+SELECT
+	(SELECT COUNT(inventory_id)
+	FROM inventory) AS num,
+	rental_id,
+	SUM(rental_id * num) AS cost
+FROM rental;
