@@ -9,11 +9,13 @@ WITH temp_table AS (
 		ON inv.inventory_id = r.inventory_id
 	GROUP BY f.film_id, f.title)
 
-/*SELECT film_id, title, SUM(pre) AS Revenue
+/* Here we are using a CTE to calculate revenue for films
+SELECT film_id, title, SUM(pre) AS Revenue
 FROM temp_table
 GROUP BY film_id, title
 ORDER BY Revenue DESC;*/
 ----
+/*Here we are calculating the revenue for film greater than 150 in film_id
 SELECT SUM(pre) AS Revenue
 FROM temp_table
-WHERE film_id > 150;
+WHERE film_id > 150;*/
