@@ -20,6 +20,8 @@ ORDER BY Revenue DESC;*/
 /*Here we are calculating the revenue for film greater than 150 in film_id
 SELECT SUM(pre) AS Revenue
 FROM temp_table
+FROM temp_table
+FROM temp_table
 WHERE film_id > 150;*/
 --- The short-hand use of CAST() is the ::
 SELECT DATE_TRUNC('day', rental_date) :: DATE AS rental_week,
