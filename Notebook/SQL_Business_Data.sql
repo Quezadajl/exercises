@@ -29,5 +29,7 @@ WHERE DATE_TRUNC('day', rental_date) = '2005-05-25'
 GROUP BY rental_date
 ORDER BY rental_date DESC;*/
 ---Calculating Cost--
-SELECT COUNT(inventory_id)
-FROM inventory;
+SELECT rental_id,
+	SUM(rental_id * inventory_id) AS cost
+FROM rental
+GROUP BY rental_id;
